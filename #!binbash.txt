@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Update package lists
+sudo apt update -y
+
+# Install Nginx
+sudo apt install -y nginx
+
+# Remove default Nginx index page
+sudo rm -f /var/www/html/index.nginx-debian.html
+
+# Apne banaye hue web page ka content yahaan paste karein
+cat <<EOF > /var/www/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mera Pehla Web Page</title>
+</head>
+<body>
+    <h1>Swagat Hai!</h1>
+    <p>Yeh mera pehla web page hai jo Azure par chal raha hai.</p>
+</body>
+</html>
+EOF
+
+# Start Nginx service
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl enable nginx

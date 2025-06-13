@@ -1,4 +1,6 @@
 Azure Scalable Nginx Web Application
+
+
 Project Overview -
 This project demonstrates the deployment of a highly available and auto-scaling static web application on Microsoft Azure. The solution leverages core Azure infrastructure services to ensure the web application is resilient, performant, and can automatically adapt to varying user loads, showcasing best practices for cloud deployments.
 
